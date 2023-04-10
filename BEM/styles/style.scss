@@ -1,0 +1,242 @@
+$font: "Franklin Gothic Medium", "Arial Narrow", Arial,sans-serif;
+$background-color:#5222d0;
+
+@media screen and (min-width: 1024px) {
+.container{
+  max-height: 800px;
+  height: 100%;
+  max-width: 1900px;
+  width: 100%;
+
+header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 3%;
+      margin-right: 3%;
+    .header {
+        display: flex;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+      .header__title {
+        font-size: 2.5vw;
+        padding-left: 15px;
+      }
+    }
+      .header__button {
+        background: $background-color;
+        color: white;
+        margin-right: 5%;
+        border-radius: 10vw;
+        width: 10vw;
+        height: 3.5vw;
+        font-family: $font;
+        font-size: 1vw;
+      }
+}
+main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+       .advertising {
+      margin-left: 23%;
+      margin-top: 10%;
+    }
+      .advertising__button {
+      background-color: #5222d0;
+      color: white;
+      margin-top: 5%;
+      width: 16vw;
+      height: 8vh;
+      border-radius: 10vw;
+      font-family: $font;
+      font-size: 2.5vw;
+    }
+      .advertising__button_pay {
+      height: 2vw;
+      width: 3.3vw;
+      left: 0px;
+      top: 0px;
+      border-radius: 2px;
+      }
+      .advertising__title {
+      font-family: $font;
+      font-size: 4vw;
+      font-weight: 400;
+      }
+      .advertising__text {
+        font-family: "Roboto Slab";
+        font-size: 2vw;
+      }
+
+    .deco__picture {
+      padding-left: 10%;
+      width: 100%;
+    }
+}
+  .navigation {
+     
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
+      padding-left: 8%;
+      a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      font-family: "Roboto Slab";
+      font-size: 1.5vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-right: 3%;
+      .header {
+          display: flex;
+          justify-content: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 22px;
+          font-weight: 800;
+        .header__title {
+          font-size: 2.5vw;
+          padding-left: 15px;
+        }
+      }
+        .header__button {
+          background:$background-color;
+          color: white;
+          margin-right: 5%;
+          border-radius: 10vw;
+          width: 10vw;
+          height: 3.5vw;
+          font-family: $font;
+          font-size: 1vw;
+        }
+  }
+  main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+         .advertising {
+        margin-left: 23%;
+        margin-top: 10%;
+      }
+        .advertising__button {
+        background-color: $background-color;
+        color: white;
+        margin-top: 5%;
+        width: 16vw;
+        height: 8vh;
+        border-radius: 10vw;
+        font-family: $font;
+        font-size: 2.5vw;
+      }
+        .advertising__button_pay {
+        height: 2vw;
+        width: 3.3vw;
+        left: 0px;
+        top: 0px;
+        border-radius: 2px;
+        }
+        .advertising__title {
+        font-family: $font;
+        font-size: 4vw;
+        font-weight: 400;
+        }
+        .advertising__text {
+          font-family: "Roboto Slab";
+          font-size: 2vw;
+        }
+  
+      .deco__picture {
+        padding-left: 10%;
+        width: 100%;
+      }
+  }
+    footer {
+      display: none;
+    }
+}
+  @media screen and (max-width: 799px) {
+   header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-right: 3%;
+      .header {
+          display: flex;
+          justify-content: center;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 22px;
+          font-weight: 800;
+        
+          .header__title {
+          font-size: 3vw;
+          padding-left: 15px;
+        }
+      }
+      .header__button {
+          background: $background-color;
+          color: white;
+          margin-right: 5%;
+          border-radius: 10vw;
+          width: 10vw;
+          height: 3.5vh;
+          font-family: $font;
+          font-size: 1vw;
+        }
+  }
+main {
+   display: grid;
+    .advertising {
+     display: grid;
+     margin-top: 10%;
+      .advertising__button {
+        background-color: $background-color;
+        color: white;
+        margin-top: 5%;
+        width: 16vw;
+        height: 8vh;
+        border-radius: 10vw;
+        font-family: $font;
+        font-size: 2.5vw;
+        justify-self: center;
+      }
+        .advertising__button_pay {
+        height: 2vw;
+        width: 3.3vw;
+        left: 0px;
+        top: 0px;
+        border-radius: 2px;
+        }
+        .advertising__title {
+        font-family: $font;
+        font-size: 4vw;
+        font-weight: 400;
+        justify-self: center;
+        }
+        .advertising__text {
+          padding-left: 5%;
+          padding-right: 5%;
+          font-family: "Roboto Slab";
+          font-size: 2vw;
+          
+        }
+      }
+  
+      .deco__picture {
+        padding-top: 10%;
+        width: 100%;
+      }
+  }
+    footer {
+      display: none;
+    }
+  }
